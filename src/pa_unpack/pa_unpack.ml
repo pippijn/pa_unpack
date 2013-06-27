@@ -12,7 +12,7 @@ module Make (AstFilters : Sig.AstFilters) = struct
   let expander = object (o)
     inherit Ast.map as super
 
-    method expr = function
+    method! expr = function
       | <:expr@loc<unpack $str:template$>> ->
           Expander.unpack loc template
       | <:expr@loc<pack $str:template$>> ->

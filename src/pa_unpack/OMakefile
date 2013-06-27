@@ -4,22 +4,21 @@ Description	= Perl-style type-safe pack/unpack
 Version		= 0.1
 
 # Sources
-Modules[]	=
+Modules[] =
 	Expander
 	Pa_unpack
 	Template
 	TemplateLexer
 	TemplateParser
 
-# External dependencies
-Requires[]	=
+# Library dependencies
+Requires[] =
 	camlp4.extend
 	camlp4.quotations
 	sexplib.syntax
 
 # Camlp4
-Flags.		=
-  extends $(Map)
+Flags. +=
   $|expander.ml|	= -syntax camlp4o
   $|pa_unpack.ml|	= -pp camlp4of
   $|template.ml|	= -syntax camlp4o
