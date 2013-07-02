@@ -8,4 +8,4 @@ Modules[] =
 	Bitstream
 	Unpack
 
-ocaml-library ()
+library (.DEFAULT)

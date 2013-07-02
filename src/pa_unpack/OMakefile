@@ -5,17 +5,17 @@ Version		= 0.1
 
 # Sources
 Modules[] =
-	Expander
-	Pa_unpack
-	Template
-	TemplateLexer
-	TemplateParser
+  Expander
+  Pa_unpack
+  Template
+  TemplateLexer
+  TemplateParser
 
 # Library dependencies
-Requires[] =
-	camlp4.extend
-	camlp4.quotations
-	sexplib.syntax
+OCaml-Requires[] =
+  camlp4.extend
+  camlp4.quotations
+  sexplib.syntax
 
 # Camlp4
 Flags. +=
@@ -23,8 +23,9 @@ Flags. +=
   $|pa_unpack.ml|	= -pp camlp4of
   $|template.ml|	= -syntax camlp4o
 
-# Build byte-code version for syntax extensions
-BYTE_ENABLED		= true
-NATIVE_ENABLED		= false
+# Only build byte-code version for syntax extensions.
+OCAML_BYTE		= true
+OCAML_NATIVE		= false
+OCAML_PLUGIN		= false
 
-ocaml-library ()
+library (.DEFAULT)
