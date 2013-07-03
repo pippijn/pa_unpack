@@ -1,5 +1,5 @@
 # Target
-Target		= unpack
+Name		= unpack
 Description	= Unpack support library
 Version		= 0.1
 
@@ -8,4 +8,4 @@ Modules[] =
 	Bitstream
 	Unpack
 
-library (.DEFAULT)
+library-install (.DEFAULT)
