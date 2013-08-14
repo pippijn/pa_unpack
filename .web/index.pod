@@ -1,0 +1,7 @@
+=head1 pa_unpack
+
+Pa_unpack provides a type-safe C<pack> and C<unpack> function, compatible with
+the L<Perl functions|http://perldoc.perl.org/functions/unpack.html>. They are
+useful for portable binary marshalling and unmarshalling.
+
+L<Git repository|https://github.com/pippijn/pa_unpack>
