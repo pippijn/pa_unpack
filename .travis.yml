@@ -1,0 +1,11 @@
+language: c
+script: dpkg-buildpackage -b -us -uc
+
+install:
+   - sudo apt-get install omake dh-ocaml libsexplib-camlp4-dev
+
+# whitelist
+branches:
+   only:
+      - master
+      - /.*\/staging/

@@ -1,0 +1,3 @@
+@OCamlStdlibDir@/unpack/*.a
+@OCamlStdlibDir@/unpack/*.cm[ix]
+@OCamlStdlibDir@/unpack/*.cmxa

@@ -1,0 +1,2 @@
+@OCamlStdlibDir@/pa_unpack/META
+@OCamlStdlibDir@/pa_unpack/*.cma
