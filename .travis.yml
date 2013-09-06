@@ -4,7 +4,7 @@ script: dpkg-buildpackage -b -us -uc
 install:
    - sudo apt-add-repository -y ppa:pippijn/ppa
    - sudo apt-get update
-   - sudo apt-get install omake dh-ocaml menhir libsexplib-camlp4-dev
+   - sudo apt-get install omake dh-ocaml menhir camlp4-extra libsexplib-camlp4-dev
 
 # whitelist
 branches:
