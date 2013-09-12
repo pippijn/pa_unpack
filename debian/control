@@ -9,6 +9,7 @@ Build-Depends:
   ocaml-nox (>= 3.12),
   ocaml-findlib,
   menhir,
+  camlp4-extra,
   libsexplib-camlp4-dev,
   dh-ocaml,
   debhelper (>= 8.0.0)
