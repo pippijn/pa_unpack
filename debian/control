@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Pippijn van Steenhoven <pip88nl@gmail.com>
 Build-Depends:
  debhelper (>= 8.0.0),
- obuild, noweb,
+ obuild,
  dh-ocaml (>= 0.9),
  ocaml-nox (>= 3.12),
  ocaml-findlib,
