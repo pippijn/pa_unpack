@@ -2,17 +2,15 @@ Source: ocaml-unpack
 Section: ocaml
 Priority: optional
 Maintainer: Pippijn van Steenhoven <pip88nl@gmail.com>
-Uploaders: 
-  Pippijn van Steenhoven <pip88nl@gmail.com>
 Build-Depends:
-  obuild,
-  ocaml-nox (>= 3.12),
-  ocaml-findlib,
-  menhir,
-  camlp4-extra,
-  libsexplib-camlp4-dev,
-  dh-ocaml,
-  debhelper (>= 8.0.0)
+ debhelper (>= 8.0.0),
+ obuild, noweb,
+ dh-ocaml (>= 0.9),
+ ocaml-nox (>= 3.12),
+ ocaml-findlib,
+ libsexplib-camlp4-dev,
+ camlp4-extra,
+ menhir
 Standards-Version: 3.9.2
 Homepage: https://github.com/pippijn/unpack
 Vcs-Git: git://github.com/pippijn/unpack
