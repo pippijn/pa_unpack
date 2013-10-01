@@ -1,1 +1,2 @@
-@OCamlStdlibDir@/pa_unpack/*.cm[ix]
+@OCamlStdlibDir@/pa_unpack/META
+@OCamlStdlibDir@/pa_unpack/*.cm[aix]
