@@ -25,9 +25,9 @@ Depends:
  ${shlibs:Depends}
 Provides: ${ocaml:Provides}
 Recommends: ocaml-findlib
-Description: Common library for OCaml projects
- This library contains some common modules I use for
- most of my projects.
+Description: Perl-style type-safe pack/unpack for OCaml
+ This syntax extension provides a Perl-style pack/unpack function
+ for type-safe binary marshalling of simple data structures.
 
 Package: libunpack-ocaml
 Architecture: any
@@ -36,9 +36,9 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends}
 Provides: ${ocaml:Provides}
-Description: Common library for OCaml projects
- This library contains some common modules I use for
- most of my projects.
+Description: Perl-style type-safe pack/unpack for OCaml
+ This syntax extension provides a Perl-style pack/unpack function
+ for type-safe binary marshalling of simple data structures.
  .
  This package contains the shared runtime libraries.
 
@@ -50,6 +50,6 @@ Depends:
  ${shlibs:Depends}
 Provides: ${ocaml:Provides}
 Recommends: ocaml-findlib
-Description: Common library for OCaml projects
- This library contains some common modules I use for
- most of my projects.
+Description: Perl-style type-safe pack/unpack for OCaml
+ This syntax extension provides a Perl-style pack/unpack function
+ for type-safe binary marshalling of simple data structures.
