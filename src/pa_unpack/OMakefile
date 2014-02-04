@@ -1,0 +1,26 @@
+Name		= pa_unpack
+Description	= Perl-style type-safe pack/unpack
+Version		= 0.1
+
+# Sources
+OCaml-Sources[] =
+  Expander
+  Pa_unpack
+  Template
+  TemplateLexer
+  TemplateParser
+
+# Library dependencies
+OCaml-Requires[] =
+  camlp4.extend
+  camlp4.quotations
+  sexplib.syntax
+
+# Camlp4
+Flags. +=
+  $|expander.ml|	= -syntax camlp4o
+  $|pa_unpack.ml|	= -pp camlp4of
+  $|template.ml|	= -syntax camlp4o
+
+TARGET = $(syntax-extension-install)
+.DEFAULT: $(TARGET)

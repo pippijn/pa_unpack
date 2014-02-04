@@ -1,0 +1,10 @@
+Name		= unpack
+Description	= Unpack support library
+Version		= 0.1
+
+OCaml-Sources[] =
+  Bitstream
+  Unpack
+
+TARGET = $(library-install)
+.DEFAULT: $(TARGET)
